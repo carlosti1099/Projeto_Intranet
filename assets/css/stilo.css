@@ -1,0 +1,401 @@
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+html {
+  font-family: "Lucida Sans", sans-serif;
+}
+
+/*
+body {
+    background-color: transparent;
+    /*background-image:  linear-gradient( to right, #ADD8E6, transparent, #A9A9A9 ),
+      url("../img/nova pasta/medica.jpg");*/
+    
+    /*background-image: url("../img/print.jpg");*/
+    /*background: #4AA0DD no-repeat center center fixed;
+
+    /*background-image: linear-gradient( 180.3deg,  rgba(221,221,221,1) 5.5%, rgba(110,136,161,1) 90.2% );*/
+    /*width:95%;
+    padding-left: 5%;
+    padding-right: 5%;
+}*/
+
+body {
+  background-image: url("../img/bg.jpg");
+}
+
+.container{
+  max-width: 1260px;
+}
+
+/**/
+.row {
+	content: "";
+	clear: both;
+	display: flex;
+}
+
+/*---Cabeçalho---*/
+.header {
+  width: 100%;
+  /*background-image: linear-gradient( 69.8deg,  rgba(25,49,108,1) 
+    2.8%, rgba(1,179,201,1) 97.8% );*/
+  /*background-image: linear-gradient(to top, #2cc3e3, #00b6c5,
+    #00a8a2, #00997d, #0d8958);*/
+    background-image: linear-gradient(to left top, #8efbf4, #7be3e2, #69cbd0, #5ab4bd, #4b9daa, #4b9daa, #4b9ca9, #4b9ca9, #59b1bb, #69c7cc, #7adddd, #8cf4ed);
+  color: #ffffff;
+  height:100px;
+  border-bottom: 10px solid #0A4B11;
+}
+
+
+/*Nav vertical*/
+.col-sm-3{
+  /*font-size: 120%;*/
+  background-image: linear-gradient(to left top, #1e2bb1,
+    #0066dc, #008dd4, #00aeac, #15c882);
+    /*teste*/
+    background-image: linear-gradient(to left top, #8efbf4, #73d6d6, 
+     #59b3b8, #429099, #2d6f7a, #2d6f79, #2d6e79, #2d6e78,
+      #428e96, #59afb3, #71d1d0, #8cf4ed);
+}
+
+/*main*/
+.col-sm-9{
+  padding-left: 5px;
+  background-image: linear-gradient(to bottom, #3a9ed3, #4fabd8,
+    #63b8dc, #78c5e1, #8dd1e6, #8dd3e5, #8ed4e5, #8fd6e4, #79cedd,
+    #61c6d6, #43becf, #06b6c8); 
+}
+
+/*Nav-Horizontal*/
+.nav-horizontal {
+  /*Personalizando Nav-horizontal*/
+    /*background-image: linear-gradient(to right top, #bbd1c9, #c5dad3, #d0e2dd, #daebe7, #e5f4f1);*/
+    background-color: #CEE4F6;
+    border-style: inset;
+    border-width: 7px;
+    border-color: #1274cf;
+  }
+  
+  /*Contorno Button*/
+  .nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
+    border-color: #BFC4C1;
+  }
+
+  /**/
+  .navbar-light .navbar-nav .nav-link {
+    color: #000;
+    font-size: 14px;
+  }
+
+  /*Cor link visitado*/
+  .nav-tabs .nav-item.show .nav-link,
+  .nav-tabs .nav-link.active {
+    /*background-color: #1274cf;*/
+    background-color: #65d4f5;
+    background-image: linear-gradient(19deg, #65d4f5 0%, #054d94 100%);
+  }
+  
+  /*Altera cor menu */
+  .nav-item a:hover {
+    color: #fff !important;
+    background-image: linear-gradient(19deg, #65d4f5 0%, #054d94 100%);
+  }
+
+  .navbar-light .navbar-nav
+  .active.nav-link, .navbar-light
+  .navbar-nav .nav-link.active,
+  .navbar-light .navbar-nav .nav-link.show,
+  .navbar-light .navbar-nav .show.nav-link {
+    color: #fff !important;
+    font-weight: bold;
+  }
+/*Fim Nav-horizontal*/
+
+/*col - */
+[class*="col-"], footer, aside, section, div[role="main"]  {
+	float: left;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: #cee4f6;
+	/*background-color: rgba(86,61,124,.15);*/
+	border: 0px solid #ddd;
+	/*border: 1px solid rgba(86,61,124,.2);*/
+	text-align: center;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 99.8%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 33%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 99.8%;}
+  .col-11 {width: 91.66%;}
+  /*.col-12 {width: 100%;}*/
+}
+
+@media only screen and (max-width: 768px) {
+  /* For desktop: */
+   .nav-vertical {font-size: 80%;}
+
+  }
+
+
+  /*Personalizando logo Img*/
+  .coluna1 img{
+      width: 90%;
+      margin-bottom: 15px;
+      border-radius: 5%;
+  }
+
+  .coluna2 img{
+      width: 90%;
+      margin-bottom: 15px;
+      border-radius: 5%;
+  }
+
+  .coluna3 img{
+      width: 90%;
+      margin-bottom: 15px;
+      border-radius: 5%;
+  }
+
+  .coluna4 img{
+      width: 90%;
+      margin-bottom: 15px;
+      border-radius: 5%;
+  }
+
+
+  .interagis img {
+      display: flex;
+      width: 100%;
+  }
+
+  .nfse img {
+      width: 100%;
+      border-radius: 5%;
+  }
+
+  .assist img {
+      width: 90%;
+      border-radius: 5% 20%;
+  }
+
+  .orizon img {
+      width: 100%;
+      border-radius: 5%;
+  }
+
+  .geap img {
+      width: 100%;
+      border-radius: 5%;
+  }
+
+  .sisreg img {
+      width: 90%;
+      border-radius: 5%;
+      border: 3px solid #236399;
+  }
+
+  .bradesco_saude img {
+      width: 100%;
+      border-radius: 5%;
+  }
+
+  .assefaz img {
+      width: 100%;
+      border-radius: 5%;
+  }
+
+  .cassems img {
+      width: 100%;
+      max-height: 140px;
+      min-height: 70px;
+      border-radius: 5%;
+  }
+
+  .unisaude img {
+      width: 85%;
+      max-height: 130px;
+      border-radius: 5%;
+  }
+
+  .profarma img {
+      width: 85%;
+      max-height: 140px;
+      border-radius: 5%;
+  }
+
+  .notredame img {
+      width: 100%;
+      border-radius: 5%;
+  }
+
+  .guiamais img {
+      width: 100%;
+      border-radius: 5%;
+  }
+
+  .correios img {
+      width: 100%;
+      border-radius: 5%;
+  }
+
+  .saude-caixa img {
+      width:90%;
+      border-radius: 5%;
+  }
+
+
+/*---MenuNav---*/
+.menu .imageLogo img{
+  width: 100%;
+  border-radius: 3%;
+  border-style: inset;
+  border-width: 4px;
+  margin: 30px 0px 50px;
+}
+
+.nav-vertical {
+    background:#CEE4F6;
+    padding: 12px !important;
+    }
+   
+    .nav-vertical ul {
+      width:100%;
+      list-style-type: none;
+    }
+
+    .nav-vertical li {
+      padding: 2px;
+      margin-bottom: 0px;
+      color: #000;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    }
+
+    /*Remove sublinhado menu*/
+    .nav-vertical li a {
+       display: block;
+       text-decoration: none;
+       padding: 6px;
+       color: #000000;
+    }
+    /*Perso. Somente Nav Home*/
+    .nav-vertical li a.active {
+      /*background-color: #37bc9b;*/
+      background-image: linear-gradient(to bottom, #0d6d6d, #00817c, #009688, #00ab92, #13c09a);
+      color: white;
+    }
+
+    /*Altera cor link ao passar o mouse*/
+    .nav-vertical li a:hover:not(.active) {
+      background-color: #142925;
+      /*background-color: #555;*/
+      color: white;
+    }
+
+    .submenu{
+      width: 100%;
+      padding-left: 10px !important;
+      padding-right: 10px !important;  
+    }
+/*--Fim MenuNav--*/
+
+
+/*Tabelas ramais*/
+.tabela {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  border-collapse: collapse;
+  width: auto;
+  /*left: -40px;position: absolute;*/
+  background-image: linear-gradient(to bottom, #adbcbb, #aecbc9, #afdad8, #afe9e7, #aef8f7);
+  }
+
+  .panel-header{
+    padding: 10px;
+    border-bottom: 1px solid transparent;
+    color: #fff;
+    background-image: linear-gradient(15deg, #13547a 0%, #256b94 100%);
+    border-radius: 6px 6px 0px 0px;
+  }
+
+  .table-border{
+    /*border-style: inset;*/
+    border-width: 3px;
+    border-color: #5a5858;
+    border-radius: 4px;
+    }
+
+    .table-border td,
+    .table-bordered th,
+    .table-info td,
+    .table-info th {
+      border: 1px solid #606264 !important;
+    }
+
+  .tabela tr:nth-child(even){background-color: #f2f2f2;}
+
+  .tabela tr:hover {background-color: #ddd;}
+
+  .tabela th {
+    padding-top: 0px;
+    padding-bottom: 2px;
+    text-align: left;
+    background-image: linear-gradient(to bottom, #0d6d6d, #00817c, #009688, #00ab92, #13c09a);
+    color: white;
+  }
+
+  .tabela th{border: 1px solid #232727;}
+  .tabela td{border: 1px solid #232727;}
+/*Fim tabelas*/
+
+  .table td, .table th{
+    font-weight: lighter;
+    font-size: 14px;
+    padding: 8px;
+    text-align: left;
+  }
+
+  
+
+/*---Rodapé---*/
+.footer {
+  background-image: radial-gradient(circle, #327874, #316d6c, #316264, #30575b, #304d51, #2f5054, #2e5357, #2d565a, #29686b, #237a7a, #198c88, #0a9f95);
+  color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+  padding: 30px;
+  height:80px;
+}
